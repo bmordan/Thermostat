@@ -9,7 +9,7 @@ function ThermostatView (element) {
 
 ThermostatView.prototype.bindTo = function(selector, obj, func){
   $(selector).on('click', function() {
-    $('artical').text(func.call(obj))
+    $('artical h1').text(func.call(obj))
   })
 }
 
