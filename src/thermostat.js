@@ -22,7 +22,7 @@ Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
   if (this.temperature < 10) this._temperature = 10
 }
 Thermostat.prototype.reset = function() {
-  this._temperature = 20
+  return this._temperature = 20
 }
 Thermostat.prototype.colorise = function(temperature) {
   var rainbow = new Rainbow()
