@@ -70,19 +70,19 @@ describe('With this amazing thermostat you can', function() {
     })
 
     it('returns color values for the frontend', function(){
-      expect(thermostat.colorise(20)).toEqual('cce600')
+      expect(thermostat.colorise(20)).toEqual('#cce600')
     })
 
     it('green when below 18', function(){
-      expect(thermostat.colorise(17)).toEqual('8fc700')
+      expect(thermostat.colorise(17)).toEqual('#8fc700')
     })
 
     it('yellow when below 25', function(){
-      expect(thermostat.colorise(24)).toEqual('ffe000')
+      expect(thermostat.colorise(24)).toEqual('#ffe000')
     })
 
     it('red when over 25', function(){
-      expect(thermostat.colorise(29)).toEqual('ff7a00')
+      expect(thermostat.colorise(29)).toEqual('#ff7a00')
     })
   });
 

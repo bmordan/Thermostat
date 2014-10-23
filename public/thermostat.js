@@ -30,6 +30,7 @@ Thermostat.prototype.colorise = function(temperature) {
   var rainbow = new Rainbow()
   rainbow.setSpectrum('green','yellow','red')
   rainbow.setNumberRange(10,35)
-  return rainbow.colourAt(temperature)
+  var color = rainbow.colourAt(temperature)
+  return '#'+color
 }
 

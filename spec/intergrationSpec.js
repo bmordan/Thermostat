@@ -48,4 +48,11 @@ describe('The Thermostat view', function() {
     
   })
 
+  describe('colour method', function() {
+    it('returns a color', function() {
+      view = new ThermostatView
+      expect(view.colorise(20)).toEqual('#cce600')
+    })
+  })
+
 })
