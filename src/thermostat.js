@@ -8,6 +8,7 @@ Thermostat.prototype = {
 }
 Thermostat.prototype.increase = function() {
   this.increaseTemperatureBy(1)
+  return this.temperature
 }
 Thermostat.prototype.increaseTemperatureBy = function(degrees) {
   this._temperature += degrees
@@ -16,6 +17,7 @@ Thermostat.prototype.increaseTemperatureBy = function(degrees) {
 }
 Thermostat.prototype.decrease = function() {
   this.decreaseTemperatureBy(1)
+  return this.temperature
 }
 Thermostat.prototype.decreaseTemperatureBy = function(degrees) {
   this._temperature -= degrees
